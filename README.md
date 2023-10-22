@@ -1,9 +1,9 @@
 # DROWSINESS ALERT SYSTEM
 ## AIM:
 ### To implement a drowsiness alert system using python
-## COMPONENTS REQUIRED:
+## COMPONENTS USED:
 ### 1. Jupyter Lab
-### 2. Python 
+### 2. Python
 ## ALGORITHM:
 * ###  Install the necessary python libraries i.e opencv, dlib etc...
 * ###  Apply the EAR(Eye-Aspect Ratio)Algorithm
@@ -40,7 +40,7 @@ def calculation(eye):
     D1 = distance.euclidean(eye[1], eye[5])
     D2 = distance.euclidean(eye[2], eye[4])
     D3 = distance.euclidean(eye[0], eye[3])
-    ear = (D1 + D2) / (2.0 * D3)
+    ear = (D1 + D2) / (2 * D3)
     return ear
 
 def play_sound():
@@ -67,7 +67,7 @@ while True:
         RightEye = shape[Right_Start:Right_End]
         LeftEAR = calculation(LeftEye)
         RightEAR = calculation(RightEye)
-        Eye_aspect_ratio = (LeftEAR + RightEAR) / 2.0
+        Eye_aspect_ratio = (LeftEAR + RightEAR) / 2
         LeftHull = cv2.convexHull(LeftEye)
         RightHull = cv2.convexHull(RightEye)
         cv2.drawContours(frame, [LeftHull],-1,(255, 125, 125),1)
