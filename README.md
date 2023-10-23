@@ -16,9 +16,11 @@
 * ### Setup the alert sound when drowsiness is detected
 * ### Execute all the programs in order to get the appropriate output
 ## EAR CALCULATION:
-![EAR CALCULATION](Calculation.png)
+![EAR CALCULATION](./assets/Calculation.png)
 ## FACIAL LANDMARKS:
-![FACIAL LANDMARKS](Facial%20Landmarks.webp)
+![FACIAL LANDMARKS](./assets/Facial%20Landmarks.webp)
+## SEQUENCE Diagram:
+![SEQUENCE Diagram](./assets/Alert%20System.jpg)
 ## Upscaling:
 Upscaling, in the context of computer vision and image processing, refers to the process of increasing the size or resolution of an image. It involves the interpolation of pixel values to create a larger image that contains more detail than the original, lower-resolution image. The purpose of upscaling is often to improve the visual quality or to enhance the accuracy of certain image processing tasks.
 ## BGR Format:
@@ -89,8 +91,8 @@ cv2.destroyAllWindows()
 ## OUTPUT:
 ### AFTER TESTING
 ### BEFORE DETECTION
-![BEFORE DETECTION](BEFORE.png)
+![BEFORE DETECTION](./assets/BEFORE.png)
 ### AFTER DETECTION
-![AFTER DETECTION](AFTER.png)
+![AFTER DETECTION](./assets/AFTER.png)
 ## RESULT:
 ### Thus the drowsiness system using python has been implemented successfully
